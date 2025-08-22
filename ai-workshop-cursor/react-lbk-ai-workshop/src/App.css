@@ -35,8 +35,35 @@
 
 .card {
   padding: 2em;
+  margin: 1em 0;
+  border: 1px solid #646cff;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: #646cff;
+}
+
+.card p {
+  margin-bottom: 1em;
 }
 
 .read-the-docs {
   color: #888;
+}
+
+/* DatePicker specific styles */
+.date-picker-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0;
+}
+
+/* Ensure calendar appears above other elements */
+.calendar-dropdown {
+  z-index: 1000;
 }

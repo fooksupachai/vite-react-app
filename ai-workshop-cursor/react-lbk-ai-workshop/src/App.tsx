@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import DatePicker from './components/DatePicker'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,6 +18,16 @@ function App() {
         </a>
       </div>
       <h1>Hello World</h1>
+      
+      {/* Date Picker Section */}
+      <div className="card">
+        <h2>Date Picker Component</h2>
+        <p>Click on the input field below to open the calendar:</p>
+        <div className="mt-4">
+          <DatePicker />
+        </div>
+      </div>
+      
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
